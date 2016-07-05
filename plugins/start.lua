@@ -31,17 +31,17 @@ local function do_keyboard_private()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '🌐 Site', url = 'http://beatbot.ir'},
-    		{text = '📡 Channels', callback_data = '!channel'},
+    		{text = '🌐 سایت', url = 'http://hextor.ir'},
+    		{text = '📡کانال', callback_data = '!channel'},
 	    },
 		{
-	        {text = '📥 Contact Us 📤', callback_data = '/chat'},
+	        {text = '📥ارتباط با ما 📤', callback_data = '/chat'},
         },
 		{
-	        {text = 'About Us 👥', callback_data = '!aboutus'},
+	        {text = 'درباره ما 👥', callback_data = '!aboutus'},
         },
 	    {
-	        {text = '🔸BeatBotTG🔹', callback_data = '!robot'},
+	        {text = '🔸ربات اسمارت🔹', callback_data = '!robot'},
         }
     }
     return keyboard
@@ -60,14 +60,14 @@ local function do_keyboard_channel()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'Persian Channel 🇮🇷', url = 'https://telegram.me/BeatBot_team'},
+    		{text = 'Persian Channel 🇮🇷', url = 'https://telegram.me/smartgp'},
 	    },
 	{
-	        		{text = 'English Channel 🇬🇧', url = 'https://telegram.me/BeatBotTeam'},
+	        		{text = 'English Channel 🇬🇧', url = 'https://telegram.me/smartgp'},
 
     },
 		{
-					{text = 'News Channel 🗣', url = 'https://telegram.me/BeatBot_News'},
+					{text = 'News Channel 🗣', url = 'https://telegram.me/smartgp'},
 		},
 		{
 	    {text = '🔙', callback_data = '!home'},
@@ -99,7 +99,7 @@ local action = function(msg, blocks, ln)
         local msg_id = msg.message_id
         local text
         if query == 'channel' then
-            local text = '📡 *BeatBotTeam Channels :*'
+            local text = '📡*کانال های اسمارت : *'
             local keyboard = do_keyboard_channel()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
