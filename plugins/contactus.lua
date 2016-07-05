@@ -39,14 +39,14 @@ msg = msg.reply
 local user_id = msg.forward_from.id
  db:hset(hash, user_id, 'block')
 api.sendMessage(msg.chat.id, '_User '..user_id..' Blocked_', true) 
-api.sendMessage(user_id, '`- Sorry`\n_You are Blocked_\n\n*Chat ended.*', true) 
+api.sendMessage(user_id, '`- متاسفم`\n_شما مسدود شده اید_\n\n*Chat ended.*', true) 
 else
  if msg.chat.type == 'group' and msg.chat.id == -127265741 then
  if msg.reply then return nil end
 local user_id = blocks[2]
  db:hset(hash, user_id, 'block')
 api.sendMessage(msg.chat.id, '_User '..user_id..' Blocked_', true) 
-api.sendMessage(user_id, '`- Sorry`\n_You are Blocked_', true) 
+api.sendMessage(user_id, '`- متاسفم`\n_شما مسدود شده اید_', true) 
 end 
 end
 end
@@ -56,14 +56,14 @@ msg = msg.reply
 local user_id = msg.forward_from.id
  db:hset(hash, user_id, 'false')
 api.sendMessage(msg.chat.id, '_User '..user_id..' UnBlocked_', true) 
-api.sendMessage(user_id, '_You are UnBlocked_', true) 
+api.sendMessage(user_id, '_شما آزاد شدید_', true) 
 else
  if msg.chat.type == 'group' and msg.chat.id == -127265741 then
   if msg.reply then return nil end
 local user_id = blocks[2]
  db:hset(hash, user_id, 'false')
 api.sendMessage(msg.chat.id, '_User '..user_id..' UnBlocked_', true) 
-api.sendMessage(user_id, '_You are UnBlocked_', true) 
+api.sendMessage(user_id, '_شما آزاد شدید_', true) 
 end 
 end
 end
@@ -71,7 +71,7 @@ end
    msg = msg.reply_to_message
     local receiver = msg.forward_from.id
     local input = blocks[1]
-      api.sendMessage(receiver, '- Reply : \n\n'..input, false)
+      api.sendMessage(receiver, 'پاسخ : \n\n'..input, false)
 end
 end
 return {
