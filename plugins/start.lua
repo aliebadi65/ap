@@ -18,8 +18,8 @@ local function do_keyboard_buygroup()
     local keyboard = {}
     keyboard.inline_keyboard = {
 {
-    		    		{text = 'Iranians', url = 'http://salam.im/buy/ecgvlup3ld'},
-    		    		{text = 'Other countries', url = 'https://telegram.me/joinchat/BvytAD9KL7J2PE2u0ek3ZA'},
+    		    		{text = 'پرداخت آنلاین', url = 'http://hextor.ir/buy/reserve.php?buy=100000&id=136141698'},
+    		    		{text = 'Other countries', url = 'https://telegram.me/joinchat/C2AZVz9e1oI_Dcw34YYSsQ'},
 	    },
 	    {
 	    {text = '🔙', callback_data = '!robot'}
@@ -110,8 +110,7 @@ if query == 'robot' then
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'buygroup' then
-            local text = [[_Please wait after payment_ 
-_We will be call to you_]]
+            local text = [[_راه های پرداخت__]]
             local keyboard = do_keyboard_buygroup()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
