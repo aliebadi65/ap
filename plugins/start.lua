@@ -104,8 +104,8 @@ local action = function(msg, blocks, ln)
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
 if query == 'robot' then
-            local text = [[🔸*BeatBotTG*🔹
-🚩 _An advanced robot for entertainment group manager and anti-spam_]]
+            local text = [[🔸*ربات اسمارت*🔹
+🚩 _رباتی پیشرفته برای کنترل و مدیریت گروه های شما آنتی اسپم_]]
             local keyboard = do_keyboard_robot()
         api.editMessageText(msg.chat.id, msg_id, text, keyboard, true)
 end
