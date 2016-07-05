@@ -2,11 +2,11 @@ local function do_keyboard_robot()
     local keyboard = {}
     keyboard.inline_keyboard = {
 		{
-    					{text = 'Share Robot Contact 🤖🤘🏾', callback_data = '!share'},
+    					{text = 'اشتراک شماره ربات 🤖🤘🏾', callback_data = '!share'},
     					},
     					{
-    		    		{text = 'Buy Group 💸', callback_data = '!buygroup'},
-    		    		{text = 'Support 👥', url = 'https://telegram.me/joinchat/BvytAD9KL7J2PE2u0ek3ZA'},
+    		    		{text = 'خرید گروه 💸', callback_data = '!buygroup'},
+    		    		{text = 'پشتیبانی 👥', url = 'https://telegram.me/joinchat/C2AZVz9e1oI_Dcw34YYSsQ'},
 	    },
 	    {
 	    {text = '🔙', callback_data = '!home'}
