@@ -17,7 +17,7 @@ if chat_info == 'block' then
  api.sendMessage(msg.chat.id, '`- Sorry !`\n_You are Blocked_', true) 
 else
  db:hset(hash, user_id, 'true')
- api.sendMessage(msg.chat.id, '*- Chat Started*\n `Now all messages will be send to BeatBotTeam Members`\n\n_please send your message now!_', true) 
+ api.sendMessage(msg.chat.id, '* چت شروع شد*\n `ارسال پیام به مدیریت ربات\n\n_plمتن خود را بنویسید و بفرستید ', true) 
  end
  end
 if blocks[1] == 'end' then
@@ -31,7 +31,7 @@ end
 if msg.chat.type == 'private' and chat_info == 'true' then
 if blocks[1] == 'end' or blocks[1] == 'chat' then return nil end
 api.forwardMessage('-127265741', msg.chat.id, msg_id) 
-api.sendKeyboard(msg.chat.id, '`- Sent !`\n_Please wait for reply_'  ,do_keyboard_endchat(), true)
+api.sendKeyboard(msg.chat.id, '`- Sent !`\n_لطفا منتظر جواب پیام باشید_'  ,do_keyboard_endchat(), true)
 end
 if blocks[1] == 'block' then
 if msg.reply and msg.reply.forward_from and msg.chat.type == 'group' and msg.chat.id == -127265741 and not blocks[2] then
