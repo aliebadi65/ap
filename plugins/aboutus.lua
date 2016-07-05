@@ -9,7 +9,7 @@
 			},
 		--	{
 			{text = 'Our friends 🌹', callback_data = '!friends'},
-			},
+		--	},--
 			{
 	    {text = '🔙', callback_data = '!home'},
 	    }
