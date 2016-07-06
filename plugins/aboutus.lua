@@ -1,15 +1,15 @@
-﻿local function do_keyboard_aboutus()
+local function do_keyboard_aboutus()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = 'تیم سازنده🤓', callback_data = '!owners'},
+    		{text = 'Team owners 🤓', callback_data = '!owners'},
 			},
-		--	{
+			{
 			{text = 'Team members 👥', callback_data = '!members'},
 			},
-		--	{
+			{
 			{text = 'Our friends 🌹', callback_data = '!friends'},
-		--	},--
+			},
 			{
 	    {text = '🔙', callback_data = '!home'},
 	    }
@@ -20,15 +20,15 @@ local function do_keyboard_owners()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
-    		{text = '● ali ebadi ●', url = 'http://telegram.me/aliebadi5'},},
-		--	{{text = '● FasT ReaCtoR ●', url = 'http://telegram.me/fastreactor'},},
-		--	{{text = '● NariMan Master ●', url = 'http://telegram.me/Nawr_i_man'},},
+    		{text = '● AmirHo3inF ●', url = 'http://telegram.me/amirho3inf'},},
+			{{text = '● FasT ReaCtoR ●', url = 'http://telegram.me/fastreactor'},},
+			{{text = '● NariMan Master ●', url = 'http://telegram.me/Nawr_i_man'},},
 			{{text = '🔙', callback_data = '!aboutus'},
 	    }
     }
     return keyboard
 end
---local function do_keyboard_members()
+local function do_keyboard_members()
     local keyboard = {}
     keyboard.inline_keyboard = {
     	{
@@ -59,7 +59,7 @@ end
     }
     return keyboard
 end
---local function do_keyboard_friends()
+local function do_keyboard_friends()
     local keyboard = {}
     keyboard.inline_keyboard = {
 	        {
@@ -85,12 +85,12 @@ local query = blocks[1]
     if msg.cb then
 	if query == 'aboutus' then
 		local keyboard = do_keyboard_aboutus()
-		local text = [[_گزبنه مورد نطر را انتخاب کنید ..._]]
+		local text = [[_Please select an option ..._]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'owners' then
 		local keyboard = do_keyboard_owners()
-		local text = [[*سازنده اسمارت 🤓 :*]]
+		local text = [[*BeatBotTeam owners 🤓 :*]]
 		api.editMessageText(chat, msg_id, text, keyboard, true)
     end
 	if query == 'members' then
