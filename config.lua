@@ -1,5 +1,5 @@
 return {
-	bot_api_key = '174444104:AAHsu9ZlYCoGBCqdBSNZ7s96D0aSaZUkEcg',
+	bot_api_key = '226433659:AAF3wlX3dxoF_40I5NbsYdgYzp9-91FEPMw',
 	admin = 136141698, 
 	channel = '@smartgp', --channel username with the '@'
 
