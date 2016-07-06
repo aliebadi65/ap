@@ -12,7 +12,7 @@ bot_init = function(on_reload) -- The function run when the bot is started or re
 	
 	print(colors('%{blue bright}Loading config.lua...'))
 	config = dofile('config.lua') -- Load configuration file.
-	if config.bot_api_key == '' then
+	if config.bot_api_key == '226433659:AAF3wlX3dxoF_40I5NbsYdgYzp9-91FEPMw' then
 		print(colors('%{red bright}API KEY MISSING!'))
 		return
 	end
